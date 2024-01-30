@@ -1,6 +1,5 @@
 import streamlit as st
 import subprocess
-subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
 import cv2
 from PIL import Image
 
@@ -8,7 +7,14 @@ import numpy as np
 
 
 
-# Load the YOLO Tiny model
+# Fungsi untuk instalasi requirements
+@st.cache(allow_output_mutation=True)
+def install_requirements():
+    subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
+
+# Install requirements hanya sekali di awal
+install_requirements()
+
 
 def perform_object_detection(image_path):
   config_file= 'models/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
