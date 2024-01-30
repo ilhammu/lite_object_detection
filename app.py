@@ -60,7 +60,7 @@ if uploaded_file is not None:
     # Display the uploaded image
     st.image(image, caption='Uploaded Image', use_column_width=True)
     st.info("The current model used is based on COCO ssd_mobilenet_v3_large_coco_2020_01_14. \n For more information, please refer to Reference below.")
-    st.link_button('Reference', 'https://cocodataset.org/#detection-2020', *, help=None, type="secondary", disabled=False, use_container_width=False)
+    st.link_button('Reference', "https://cocodataset.org/#detection-2020", *, None,"secondary",False,False)
     # Perform object detection on button click
     if st.button('Run Object Detection'):
         result_image = perform_object_detection(image)
