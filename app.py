@@ -50,7 +50,7 @@ def perform_object_detection(image_path):
 
 # Streamlit web app code
 st.title('Object Detection Coco 2020')
-
+st.text('Best for traffic management')
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
