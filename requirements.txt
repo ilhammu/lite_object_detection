@@ -1,5 +1,5 @@
 numpy==1.26.3
-opencv_python==3.4.15
+opencv_python==3.4.18.65
 Pillow==10.2.0
 streamlit==1.30.0
 streamlit-webrtc
