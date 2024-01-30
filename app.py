@@ -49,8 +49,8 @@ def perform_object_detection(image_path):
   return cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
 
 # Streamlit web app code
-st.title('Object Detection')
-st.subheader('Model => ssd_mobilenet_v3_large_coco_2020_01_14')
+st.title('Object Detection Coco 2020')
+
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
@@ -64,4 +64,6 @@ if uploaded_file is not None:
     if st.button('Run Object Detection'):
         result_image = perform_object_detection(image)
         # Display the result image
+        st.subheader('Result')
+        st.success('Success !','❤️')
         st.image(result_image, caption='Result', use_column_width=True)
