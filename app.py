@@ -11,7 +11,7 @@ def install_requirements():
 
 # Install requirements hanya sekali di awal
 install_requirements()
-
+from streamlit_webrtc import webrtc_streamer
 import cv2
 from PIL import Image
 import numpy as np
