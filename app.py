@@ -1,9 +1,6 @@
 import streamlit as st
 import subprocess
-import cv2
-from PIL import Image
 
-import numpy as np
 
 
 
@@ -15,6 +12,9 @@ def install_requirements():
 # Install requirements hanya sekali di awal
 install_requirements()
 
+import cv2
+from PIL import Image
+import numpy as np
 
 def perform_object_detection(image_path):
   config_file= 'models/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
