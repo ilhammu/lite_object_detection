@@ -59,7 +59,8 @@ if uploaded_file is not None:
 
     # Display the uploaded image
     st.image(image, caption='Uploaded Image', use_column_width=True)
-
+     st.info("The current model used is based on COCO ssd_mobilenet_v3_large_coco_2020_01_14. "
+              "For more information, please refer to [Kaggle](link_ke_kaggle_ssd_mobilenet_v3_large_coco_2020_01_14).")
     # Perform object detection on button click
     if st.button('Run Object Detection'):
         result_image = perform_object_detection(image)
