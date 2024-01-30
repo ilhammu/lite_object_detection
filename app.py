@@ -65,5 +65,5 @@ if uploaded_file is not None:
         result_image = perform_object_detection(image)
         # Display the result image
         st.subheader('Result')
-        st.success('Success !','❤️')
+        st.success('Success !',icon="❤️")
         st.image(result_image, caption='Result', use_column_width=True)
