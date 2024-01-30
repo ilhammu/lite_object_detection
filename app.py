@@ -1,11 +1,12 @@
 import streamlit as st
+subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
 import cv2
 from PIL import Image
 
 import numpy as np
 import subprocess
 
-subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
+
 # Load the YOLO Tiny model
 
 def perform_object_detection(image_path):
