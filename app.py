@@ -1,17 +1,17 @@
 import streamlit as st
-import subprocess
+# import subprocess
 
 
 
 
 # Fungsi untuk instalasi requirements
-@st.cache_data(allow_output_mutation=True)
-def install_requirements():
-    subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
+# @st.cache(allow_output_mutation=True)
+# def install_requirements():
+#     subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
 
-# Install requirements hanya sekali di awal
-install_requirements()
-from streamlit_webrtc import webrtc_streamer
+# # Install requirements hanya sekali di awal
+# install_requirements()
+# from streamlit_webrtc import webrtc_streamer
 import cv2
 from PIL import Image
 import numpy as np
