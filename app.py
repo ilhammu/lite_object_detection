@@ -5,7 +5,7 @@ import subprocess
 
 
 # Fungsi untuk instalasi requirements
-@st.cache(allow_output_mutation=True)
+@st.cache_data(allow_output_mutation=True)
 def install_requirements():
     subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
 
