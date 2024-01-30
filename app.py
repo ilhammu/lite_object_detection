@@ -49,7 +49,8 @@ def perform_object_detection(image_path):
   return cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
 
 # Streamlit web app code
-st.title('Object Detection with YOLO Tiny')
+st.title('Object Detection')
+st.subheader('Model => ssd_mobilenet_v3_large_coco_2020_01_14')
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
